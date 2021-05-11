@@ -1,6 +1,7 @@
 import logo from './milky-chance.png';
 import './App.css';
-import './components/Cancion'
+import './components/Cancion';
+import "bootstrap/dist/css/bootstrap.min.css";
 import Cancion from './components/Cancion';
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
        
 
       </header>
+      
     </div>
   );
 }

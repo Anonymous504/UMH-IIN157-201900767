@@ -8,7 +8,7 @@ export default function Cancion(props){
 <br></br>
     <h2>Milky-Chance</h2>
 
-<table>
+<table class="table table-dark">
     <tbody>
     <tr>
         <td>Titulo:</td><td>{props.titulo}</td>
@@ -25,14 +25,10 @@ export default function Cancion(props){
     <tr>
         <td>Fecha de Creacion:</td><td>{props.fechacrea}</td>
     </tr>
-    <tr>
-        <td>
-            <button onClick={ () => props.fun_mostrartitulo(props.titulo)}>Mostrar</button>
-        </td>
-    </tr>
-    
     </tbody>
 </table>
+<br></br>
+<button onClick={ () => props.fun_mostrartitulo(props.titulo)} className="btn btn-primary" aling="center">Mostrar Titulo</button>
 </div>
     )
 }
