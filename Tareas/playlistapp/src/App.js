@@ -2,7 +2,7 @@ import logo from './milky-chance.png';
 import './App.css';
 import './components/Cancion';
 import "bootstrap/dist/css/bootstrap.min.css";
-import Cancion from './components/Cancion';
+import Cancion,{Cancion2} from './components/Cancion';
 
 function App() {
   
@@ -14,16 +14,16 @@ function App() {
 
   const o_cancion = {
 
-        titulo:"Stolen Dance",
-        duracion:"5:13",
-        album:"Sadnecessary",
-        numero:"1",
-        fechacrea:" 05 Abril 2013"
+        titulo:"Blossom",
+        duracion:"3:32",
+        album:"Blossom",
+        numero:"2",
+        fechacrea:" 05 Mayo 2017"
   };
 
   const fun_mostrartitulo = (props) => {
     alert("Nombre de la Cancion: "+ props)
-  }
+  };
 
 
   return (
@@ -32,16 +32,17 @@ function App() {
         
         <img src={logo} className="App-logo" alt="logo" />
         
-        <Cancion 
+     <Cancion 
         titulo={titulo}
         duracion={dura}
         album={album}
         numero={num}
         fechacrea={fechacrea}
         fun_mostrartitulo={fun_mostrartitulo}
-        />
-
-       
+        /> 
+        
+        <Cancion2 cancionInfo = {o_cancion}
+        fun_mostrartitulo={fun_mostrartitulo}/>
 
       </header>
       
