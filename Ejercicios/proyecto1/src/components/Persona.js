@@ -18,14 +18,17 @@ export default function Persona(props){
                     <tr> <td>Apellidos: </td>   <td> {apellido}</td>  </tr>
                     <tr> <td>edad:      </td>   <td> {personaInfo.edad}</td>  </tr>
                     <tr> <td>nacionalidad:</td> <td> {personaInfo.nacionalidad}</td>  </tr>
-                    <tr> <td>genero:      </td> <td> {personaInfo.genero}</td>  </tr>
-                    <tr> <td>
-                            <button onClick={ () => fnsaludar(personaInfo.nombre) } >Saludar</button>
-                    </td> </tr>
+                    <tr> <td>generos:      </td> <td> {personaInfo.genero}</td>  </tr>
+    
+                    
                 </tbody>
+                <button onClick={ () => fnsaludar(personaInfo.nombre)}className="btn btn-primary" aling="right">Saludar</button>
             </table>
+            
         </div>
+        
     )
+    
 }
 
 export function Intereses(){

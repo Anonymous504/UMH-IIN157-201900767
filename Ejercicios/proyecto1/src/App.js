@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import './App.css';
 import Persona from "./components/Persona";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
 
@@ -9,9 +10,9 @@ function App() {
   var estado;  
   
   if(estadoPersona === true ){
-    estado ="Persona Habilitada";
+    estado ="Habilitada";
   }else{
-    estado = "Persona Deshabilitada";
+    estado = "Deshabilitada";
   }
 
   //Use Effect
@@ -52,9 +53,9 @@ function App() {
       <header className="App-header">  
 
       <h2>La persona esta {estado}</h2>
-      <button onClick={f_habilitar}>Cambiar estado</button>
-
-      <button onClick={contar}>Contador</button>
+      <button onClick={f_habilitar} className="btn btn-primary" aling="center">Cambiar estado</button>
+      <br></br>
+      <button onClick={contar} className="btn btn-primary" aling="center">Contador </button>
       <h3> Clicks {contador}</h3>
 
       <Persona 
