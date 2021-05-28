@@ -20,7 +20,7 @@ function App() {
 
   useEffect(
       ()=>{
-        console.log("Click numero:"+contador);
+        console.log("Click N°:"+contador);
         
       } ,
       [contador]
