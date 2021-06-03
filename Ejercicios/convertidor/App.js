@@ -45,6 +45,7 @@ function App(){
     <SafeAreaView style={styles.encabezado}>
       <View>
         <Text style={styles.sectionTitle}>Convertidor de Monedas</Text>
+        <Text style={styles.sectionTitle}>Joseph Fabricio Andino</Text>
       </View>
     </SafeAreaView>
     <View>
@@ -96,6 +97,7 @@ const styles = StyleSheet.create({
   sectionTitle: {
     fontSize: 24,
     fontWeight: '600',
+    alignItems: 'center',
   },
   sectionDescription: {
     marginTop: 8,
