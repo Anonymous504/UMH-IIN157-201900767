@@ -27,9 +27,6 @@ function App(){
   const [tasa, setTasa] = useState(0);
   const [conversion, setConversion] = useState(0);
 
-  const showAlert = () => {
-    Alert.alert("Conversion Exitosa","Resultado " + conversion);
-  }
 
   const convertir = () => {
     const resultado = entrada * tasa;
