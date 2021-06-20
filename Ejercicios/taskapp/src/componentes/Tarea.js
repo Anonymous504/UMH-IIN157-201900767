@@ -19,7 +19,8 @@ import {
 } from 'react-native';
 
 export default function Tarea(props){
-    const {titulo = "Titulo de tarea", descripcion = "Sin descripcion"} = props;
+    const {data} = props;
+    const {id = 0, titulo = "Titulo de tarea", descripcion = "Sin descripcion"} = data;
 
     return(
         <View style={estilos.contenedor}>
@@ -45,5 +46,9 @@ const estilos = StyleSheet.create({
     titulo:{
         fontSize:22,
         fontWeight:'500'
-    }
+    },
+    descripcion: {
+        fontSize: 18,
+        fontWeight: '600',
+      }
 })
